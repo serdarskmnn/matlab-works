@@ -1,3 +1,7 @@
+% if you do not have enough theoretical knowledge on this subject,
+% you can watch these videos
+% [ENG]https:https://www.youtube.com/watch?v=hqlQeWRPyvI
+% [TR]https:https://www.youtube.com/watch?v=BeOCLDTk9cI&t=1404s
 xl = input('enter the lower bound. xl= ');
 xu = input('enter the upper bound. xu= ');
 tol = input('Enter the tolerance. tol = ');

@@ -13,6 +13,6 @@ for i = 1:mits
         break;
     end
     y0 = y1;
-end
+ end
 disp(y1);
 plot(k, erx1); hold on;

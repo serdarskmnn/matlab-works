@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "gazebo-ardupilot-simulation",
+			"path": "../gazebo-ardupilot-simulation"
+		},
+		{
+			"name": "gorev-denemeleri",
+			"path": "../gorev-denemeleri"
+		}
+	],
+	"settings": {}
+}

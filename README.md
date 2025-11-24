@@ -1,57 +1,90 @@
-# matlab-works
+# ✈️ Avionics & UAV Control Systems Library
 
-Numerical Methods 📐💻
-This repository contains a comprehensive collection of MATLAB implementations for key topics in Numerical Analysis. It is designed as a reference and study companion for students, researchers, and engineers interested in numerical computation.
+![MATLAB](https://img.shields.io/badge/MATLAB-R2024b-orange) ![Simulink](https://img.shields.io/badge/Simulink-Control_Systems-blue) ![Status](https://img.shields.io/badge/Status-Active-green)
 
-🔍 Overview
-Each method is implemented clearly and efficiently in MATLAB. At the top of each code file, you'll find links to [ENG] English and [TR] Turkish YouTube lectures that explain the theoretical background of the method in detail.
+## 📖 Overview
+This repository serves as a comprehensive R&D portfolio for **Unmanned Aerial Vehicles (UAVs)**, bridging the gap between theoretical engineering calculations and practical flight simulations. It includes both advanced avionics projects and fundamental algorithm implementations using **MATLAB & Simulink**.
 
-The collection includes, but is not limited to:
+Developed by **Serdar Sökmen**, Electrical-Electronics Engineering Student @ Bursa Technical University.
 
-Root-finding methods: Bisection, False Position, Newton-Raphson, Fixed Point Iteration
+---
 
-Systems of equations: Gauss Elimination, LU Decomposition, Jacobi, Gauss-Seidel, Newton's Method for Systems
+## 🚀 Part 1: Advanced Avionics & UAV Projects
+*(Located in: `/for vtol and uavs (demo)`)*
 
-Interpolation: Lagrange, Newton's Divided Difference, Cubic Spline
+### 1. 🚁 6-DOF Flight Controller Simulation
+* **Description:** A full-scale physics simulation of a Quadcopter frame in Simulink.
+* **Core:** Implements a **Cascaded PID** loop structure (Position -> Velocity -> Attitude -> Rate).
+* **Physics:** Custom MATLAB Function blocks calculating rigid body dynamics using **Euler Equations**.
+* **Features:** Motor Mixing Algorithm (Quad-X), Aerodynamic Drag, and 3D Visualization.
 
-Numerical differentiation and extrapolation
+### 2. 👁️ Computer Vision & Autonomous Tracking
+* **Description:** Real-time object detection algorithm designed for autonomous precision landing.
+* **Algorithm:** Color Thresholding (HSV/RGB) + Morphological Operations (`imclose`) + Blob Analysis.
+* **Output:** Calculates pixel deviation errors $(E_x, E_y)$ to feed into the guidance loop.
 
-Numerical integration: Trapezoidal, Simpson’s Rule, Romberg Integration
+### 3. 🧭 Autonomous Navigation (Wind Triangle)
+* **Description:** A vector analysis tool for mission planning under wind conditions.
+* **Math:** Solves the "Wind Triangle" problem to calculate **Crab Angle (WCA)** and **Ground Speed (GS)**.
 
-ODE Solvers: Euler's Method, Runge-Kutta (2nd and 4th Order), Adams-Bashforth
+### 4. 🔋 Power Systems: Li-Po Battery Model
+* **Description:** Simulation of Li-Po battery discharge characteristics.
+* **Key Feature:** Models **Voltage Sag** due to internal resistance and estimates flight endurance based on load profiles.
 
-PDE Solvers: FTCS, Crank-Nicolson for Heat Equation
+### 5. 📉 Signal Processing: Sensor Fusion
+* **Description:** Discrete Low-Pass Filter implementation to clean raw IMU data corrupted by motor vibrations.
 
-Others: Power Method, Linear Regression, Parachutist Problem, and more
+---
 
-🎥 All files contain [ENG] and [TR] YouTube links for theoretical learning.
+## 📚 Part 2: Academic & Theoretical Modules
+*(Located in: `/numerical methods`, `/control systems`, `/calculus`, etc.)*
 
-🧠 Purpose
-This repository is intended for:
+This section contains fundamental algorithms and coursework implementations that form the mathematical backbone of the advanced projects above.
 
-Students taking Numerical Methods / Numerical Analysis courses
+### 1. 🧮 Numerical Analysis
+**Path:** `/numerical methods`
+Implementation of core algorithms for solving complex mathematical problems computationally:
+* **Root Finding:** Bisection Method, Newton-Raphson, Secant Method.
+* **Integration:** Trapezoidal Rule, Simpson's 1/3 Rule.
+* **Differential Equations:** Runge-Kutta Methods (RK4) for solving ODEs.
+* **Interpolation:** Lagrange and Spline interpolation techniques.
 
-Researchers needing verified MATLAB implementations
+### 2. 🕹️ Control Theory Fundamentals
+**Path:** `/control systems`
+Basic simulations and analysis tools for classical control theory:
+* **System Analysis:** Step Response, Impulse Response, and Bode Plots.
+* **Stability:** Root Locus analysis for SISO systems.
+* **PID Design:** Tuning basics and feedback loop implementation.
 
-Engineers seeking practical algorithm references
+### 3. 📐 Applied Mathematics
+**Path:** `/calculus` & `/linear algebra` & `/differential_equations`
+* **Symbolic Math:** Derivative and Integral calculations using MATLAB Symbolic Toolbox.
+* **Matrix Operations:** Linear transformations, Eigenvalue/Eigenvector problems.
+* **ODE/PDE:** Exact solutions for first and second-order differential equations.
 
-Anyone wanting to bridge theory with code
+---
 
-📁 Folder Structure
-Each file is standalone and named after the numerical method it implements. You can browse or clone the repo and use each file independently.
+## 💻 Tech Stack
+* **Languages:** MATLAB (`.m`), Simulink (`.slx`), MAVLink Protocol.
+* **Toolboxes:** UAV Toolbox, Aerospace Blockset, Image Processing Toolbox, Symbolic Math Toolbox.
+* **Simulation:** ArduPilot SITL, Gazebo (Co-Simulation capable).
 
-🔜 Future Plans
-I will continue to add more MATLAB projects and numerical tools, both within and beyond classical numerical methods, including:
+## 🚀 Installation & Usage
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/serdarskmnn/matlab-works.git](https://github.com/serdarskmnn/matlab-works.git)
+    ```
+2.  **For UAV Projects:** Navigate to the `for vtol and uavs (demo)` folder.
+3.  **For Academic Scripts:** Navigate to the respective folder (e.g., `numerical methods`).
+4.  Run the `.m` scripts directly or open `.slx` files in Simulink.
 
-Control systems simulations
+---
 
-Robotics kinematics/dynamics
+## 👨‍💻 Author & Contact
+**Serdar Sökmen**
+* **Focus:** Avionics, Embedded Systems, VTOL UAV Design.
+* **License:** UAV Pilot (IHA-1).
+* **Contact:** [LinkedIn Profile](https://www.linkedin.com/in/mserdarsokmen/)
 
-Signal and system modeling
-
-Optimization algorithms
-
-Stay tuned!
-
-🔗 Connect
-Feel free to fork, clone, or suggest improvements. If you found this useful, consider starring the repository.
+---
+*If you find these engineering resources useful, please consider starring the repository! ⭐*

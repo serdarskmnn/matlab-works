@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/faultinfo_datamodel/R2021a">
+  <faultinfo.FaultContainerSet type="faultinfo.FaultContainerSet" uuid="8e6209c9-74fc-4233-8fdb-ba3ea27b0dc8">
+    <conditionals type="faultinfo.conditional.Conditional" uuid="698e822b-7126-4cf1-a345-a9749f5efc1f">
+      <checksum>00000000-0000-0000-0000-000000000000</checksum>
+      <condition>x == true</condition>
+      <mustBeLogged>false</mustBeLogged>
+      <name>SampleConditional</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ExpressionSymbol" uuid="823c1016-51d1-4abf-99af-83af95fcd70c">
+        <expression>true</expression>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <faultContainers type="faultinfo.FaultContainer" uuid="e63a6c79-dd62-4d30-8872-7f139d774e49">
+      <activeFault type="faultinfo.SSFault" uuid="db36f746-5c0d-4008-85e8-be3d04525fab"/>
+      <faultedEntityID>SSSubelement|common_emitter_amplifier:53|Diode</faultedEntityID>
+      <faultedEntityName>common_emitter_amplifier/D2/Diode</faultedEntityName>
+      <faults type="faultinfo.SSFault" uuid="db36f746-5c0d-4008-85e8-be3d04525fab">
+        <checksum>1f222271-3aba-4538-b527-52b4c4e1ef58</checksum>
+        <faultDescription></faultDescription>
+        <faultName>D2ZENER_fault</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.PermanentTrigger" uuid="a84cb4cc-e9e8-46d0-a3a0-c9c23700fad4">
+          <isPersistent>true</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <isEnabled>true</isEnabled>
+    <lastUpdatedAt>2025-11-24T14:42:30</lastUpdatedAt>
+    <modelName>common_emitter_amplifier</modelName>
+    <modelUUID>ecfcd5b4-d57f-46d5-b856-7883fd86394e</modelUUID>
+  </faultinfo.FaultContainerSet>
+  <faultinfo.FailureModeContainer type="faultinfo.FailureModeContainer" uuid="296ae8d8-fed1-401c-b95c-0d23cfdff356">
+    <failureModes type="faultinfo.FailureMode" uuid="89b83442-1e4c-4eb2-818a-49ecef6ce9be">
+      <ID>1</ID>
+      <associatedFaults type="faultinfo.SSFault" uuid="db36f746-5c0d-4008-85e8-be3d04525fab"/>
+      <faultSubsystemName>D2ZENER_fault</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <faultModelName>odev_FaultModel</faultModelName>
+    <faultModelUUID>61eb44aa-90cf-4df3-b0ba-e611429834d6</faultModelUUID>
+  </faultinfo.FailureModeContainer>
+</MF0>

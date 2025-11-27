@@ -64,6 +64,19 @@ Basic simulations and analysis tools for classical control theory:
 
 ---
 
+## ⚡ Part 3: Electronics & Circuit Design
+*(Located in: `/electronics_circuit_designs`)*
+
+Simulation and analysis of analog/digital circuits using Simscape Electrical.
+
+### 1. Common Emitter Amplifier Design
+**Path:** `/electronics_circuit_designs/common_emitter_amplifier`
+* **Description:** A complete analog signal chain simulation including a Linear Power Supply (Transformer + Rectifier + Zener) and a BJT Amplifier.
+* **Analysis:** Verifies Voltage Gain ($A_v$), Ripple Factor, and Q-point biasing stability.
+* **Visuals:** Includes scope outputs for transient analysis.
+
+---
+
 ## 💻 Tech Stack
 * **Languages:** MATLAB (`.m`), Simulink (`.slx`), MAVLink Protocol.
 * **Toolboxes:** UAV Toolbox, Aerospace Blockset, Image Processing Toolbox, Symbolic Math Toolbox.
@@ -83,7 +96,7 @@ Basic simulations and analysis tools for classical control theory:
 ## 👨‍💻 Author & Contact
 **Serdar Sökmen**
 * **Focus:** Avionics, Embedded Systems, VTOL UAV Design.
-* **License:** UAV Pilot (IHA-1).
+* **License:** UAV Pilot
 * **Contact:** [LinkedIn Profile](https://www.linkedin.com/in/mserdarsokmen/)
 
 ---

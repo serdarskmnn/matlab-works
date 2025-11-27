@@ -41,13 +41,12 @@ This document tracks the development progress of my Avionics, Control Theory, an
 
 ---
 
-## 🔴 Phase 3: Professional Skills & Career Prep (The "Baykar" Goal)
+## 🔴 Phase 3: Professional Skills & Career Prep
 *Focus: Filling the gaps to become a Systems Engineer.*
 
 ### 📚 Theory & Learning
 - [ ] **Study:** Kalman Filter mathematics (Predict/Update steps).
 - [ ] **Study:** C++ Memory Management (Pointers, References).
-- [ ] **Certification:** Complete basic PCB design tutorial (Altium or KiCad) for schematic reading.
 
 ### 🏆 Portfolio & Outreach
 - [x] **GitHub:** Organized "Showcase" vs "Archive" structure.
